@@ -10,3 +10,13 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+spring-demo/.project
+spring-demo/.settings/
+spring-demo/springdemo-core/.classpath
+spring-demo/springdemo-core/.gitignore
+spring-demo/springdemo-core/.project
+spring-demo/springdemo-core/.settings/
+spring-demo/springdemo-web/.settings/
+spring-demo/springdemo-web/.classpath
+spring-demo/springdemo-web/.gitignore
+spring-demo/springdemo-web/.project
