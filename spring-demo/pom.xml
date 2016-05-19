@@ -21,6 +21,7 @@
 		<aopalliance.version>1.0</aopalliance.version>
 		<commons-logging.version>1.2</commons-logging.version>
 		<gson.version>2.6.2</gson.version>
+		<aspectj.version>1.8.8</aspectj.version>
 		<spring.version>4.2.5.RELEASE</spring.version>
 	</properties>
 
@@ -42,7 +43,7 @@
 				<artifactId>springdemo-web</artifactId>
 				<version>${project.version}</version>
 			</dependency>
-			
+
 			<!--servlet -->
 			<dependency>
 				<groupId>javax.servlet</groupId>
@@ -50,7 +51,7 @@
 				<version>${servlet.version}</version>
 				<scope>provided</scope>
 			</dependency>
-			
+
 			<!-- common lib -->
 			<dependency>
 				<groupId>aopalliance</groupId>
@@ -58,18 +59,23 @@
 				<version>${aopalliance.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.aspectj</groupId>
+				<artifactId>aspectjweaver</artifactId>
+				<version>${aspectj.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>com.google.code.gson</groupId>
 				<artifactId>gson</artifactId>
 				<version>${gson.version}</version>
 			</dependency>
-			
+
 			<!-- logging -->
 			<dependency>
 				<groupId>commons-logging</groupId>
 				<artifactId>commons-logging</artifactId>
 				<version>${commons-logging.version}</version>
 			</dependency>
-			
+
 			<!-- spring -->
 			<dependency>
 				<groupId>org.springframework</groupId>
