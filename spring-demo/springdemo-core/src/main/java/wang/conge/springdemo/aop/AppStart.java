@@ -9,12 +9,15 @@ import wang.conge.springdemo.aop.service.UserService;
 public class AppStart {
 
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 		
 		UserService myService = applicationContext.getBean(UserService.class);
 		myService.addCar();
 		
 		myService.createOrder();
+		
+		myService.pay();
 	}
 
 }

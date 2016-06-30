@@ -17,7 +17,6 @@ public class UserService {
 		System.out.println("下单");
 	}
 	
-	@AopLogAnnotation
 	public void pay() {
 		System.out.println("付款");
 	}
