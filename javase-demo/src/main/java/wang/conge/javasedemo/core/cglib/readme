@@ -1,0 +1,13 @@
+优点：
+1、可以直接对类进行代理
+
+1、cglib简述
+           Cglib是一个优秀的动态代理框架，它的底层使用ASM在内存中动态的生成被代理类的子类，使用CGLIB即使代理类没有实现任何接口也可以实现动态代理功能。CGLIB具有简单易用，它的运行速度要远远快于JDK的Proxy动态代理：
+使用CGLIB需要导入以下两个jar文件：
+    $1:    asm.jar – CGLIB的底层实现
+    $2:   cglib.jar – CGLIB的核心jar包。
+CGLIB的核心类：
+    net.sf.cglib.proxy.Enhancer – 主要的增强类
+    net.sf.cglib.proxy.MethodInterceptor – 主要的方法拦截类，它是Callback接口的子接口，需要用户实现
+    net.sf.cglib.proxy.MethodProxy – JDK的Java.lang.reflect.Method类的代理类，可以方便的实现对源对象方法的调用,如使用：
+    Object o = methodProxy.invokeSuper(proxy, args);//虽然第一个参数是被代理对象，也不会出现死循环的问题。

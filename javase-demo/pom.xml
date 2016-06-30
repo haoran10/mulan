@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>wang.conge.javasedemo</groupId>
+	<artifactId>javasedemo</artifactId>
+	<version>1.0</version>
+	<packaging>jar</packaging>
+
+	<properties>
+		<project.encoding>UTF-8</project.encoding>
+
+		<compiler.plugin.version>3.3</compiler.plugin.version>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<build>
+		<finalName>demo</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${compiler.plugin.version}</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<encoding>${project.encoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+			<version>3.2.2</version>
+		</dependency>	
+	</dependencies>
+</project>
