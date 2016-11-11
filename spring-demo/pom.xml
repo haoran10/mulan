@@ -30,6 +30,7 @@
 	<modules>
 		<module>springdemo-web</module>
 		<module>springdemo-core</module>
+		<module>springbase</module>
 	</modules>
 
 	<dependencyManagement>
@@ -45,7 +46,12 @@
 				<artifactId>springdemo-web</artifactId>
 				<version>${project.version}</version>
 			</dependency>
-
+			<dependency>
+				<groupId>wang.conge.springdemo</groupId>
+				<artifactId>springbase</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			
 			<!--servlet -->
 			<dependency>
 				<groupId>javax.servlet</groupId>
